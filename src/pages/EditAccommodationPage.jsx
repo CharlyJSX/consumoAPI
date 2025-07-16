@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import EditAccommodation from '../components/EditAccommodation';
-import { fetchAccommodationById, updateAccommodation } from '../api';
+import { getAccommodationById, updateAccommodation } from '../api';
 
 const EditAccommodationPage = () => {
     const { id } = useParams();

@@ -63,13 +63,13 @@ export const cancelReservation = async (id) => {
     } catch (error) {
         throw error.response.data;
     }
+};
 
-    export const fetchAccommodationById = async (id) => {
-        try {
-            const response = await axios.get(`${API_URL}/accommodations/${id}`);
-            return response.data;
-        } catch (error) {
-            throw error.response.data;
-        }
-    };
+export const getAccommodationById = async (id) => {
+    try {
+        const response = await axios.get(`${API_URL}/accommodations/${id}`);
+        return response.data;
+    } catch (error) {
+        throw error.response.data;
+    }
 };
