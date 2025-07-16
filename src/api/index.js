@@ -29,7 +29,7 @@ export const createAccommodation = async (accommodationData) => {
     }
 };
 
-export const editAccommodation = async (id, accommodationData) => {
+export const updateAccommodation = async (id, accommodationData) => {
     try {
         const response = await axios.put(`${API_URL}/accommodations/${id}`, accommodationData);
         return response.data;
