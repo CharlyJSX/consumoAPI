@@ -13,7 +13,7 @@ const EditAccommodationPage = () => {
     useEffect(() => {
         const getAccommodation = async () => {
             try {
-                const data = await fetchAccommodationById(id);
+                const data = await getAccommodationById(id);
                 setAccommodation(data);
             } catch (err) {
                 setError('Failed to fetch accommodation details');
